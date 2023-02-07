@@ -1,2 +1,5 @@
 #45505b
 background: rgba(255, 255, 255, 0.853);
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.3376837351474!2d73.92689763339506!3d18.603287782015403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c76f70e9bc9d%3A0x2f3f32692284fe47!2sJai%20Balaji%20Boys%20Hostel!5e0!3m2!1sen!2sus!4v1675796423986!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
