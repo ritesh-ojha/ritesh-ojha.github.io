@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: black;
+
 }
 
 html {
@@ -36,7 +38,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
 }
 
 .nav-links {
@@ -46,7 +48,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -59,7 +61,9 @@ a:hover {
 }
 
 .logo {
+  font-weight: 600;
   font-size: 2rem;
+  color: white;
 }
 
 .logo:hover {
@@ -150,36 +154,63 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  height: 101vh;
+  margin: 0 5rem;
   box-sizing: border-box;
   min-height: fit-content;
+
+
+  
 }
 
 .section-container {
   display: flex;
 }
 
+
 /* PROFILE SECTION */
 
 #profile {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 5rem;
-  height: 80vh;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  
+
+  background-size: cover;
+  /* background-position: center; */
+  transition: background-image 0.5s ease; /* Add a transition effect */
 }
 
-.section__pic-container {
+.background1 {
+  background-image: url('../img/1.jpg');
+}
+
+.background2 {
+  background-image: url('../img/2.jpg');
+}
+
+
+
+
+.section__pic-container  {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 800px;
+  width: 800px;
   margin: auto 0;
 }
 
+
+
 .section__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   align-self: center;
-  text-align: center;
-}
+  margin-right: 5rem;
+} 
 
 .section__text p {
   font-weight: 600;
@@ -190,27 +221,44 @@ section {
 }
 
 .section__text__p2 {
+  text-align: center;
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
+
 .title {
   font-size: 3rem;
   text-align: center;
+  color: white;
 }
+
+.typed-text {
+
+  color: #0563bb;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+
+}
+
 
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
   gap: 1rem;
+
 }
 
 /* ICONS */
+.fa-brands {
+  color: white;
+}
 
 .icon {
   cursor: pointer;
   height: 2rem;
+  color: white;
 }
 
 /* BUTTONS */
@@ -284,19 +332,25 @@ section {
 }
 
 .about-pic {
-  border-radius: 2rem;
+  border-radius: 50px;
+  
+  filter: grayscale(100%) contrast(1.2);
+
+  
+  
 }
 
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  background-color: aliceblue;
 }
 
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: rgba(255, 255, 255, 0.629);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
