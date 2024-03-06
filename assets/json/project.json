@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "title": "Spotify Report",
+      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1697781124462x833831693729637100%2Fwallpaepr.jpg",
+      "github": "https://github.com/",
+      "demo": "https://app.powerbi.com/view?r=eyJrIjoiNjJhMjAzMjEtM2RkZi00NzcwLWJmZTYtMjVkYzRiNmFhOWZjIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
+      "skills":["Power BI, Python"],
+      "summary":"testinhlbshhgosntr zhtbhg"
+    },
+    {
+      "title": "Annual Deaths Report",
+      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1694614760782x576339501888930370%2Fdashboad_page-0001-min.jpg",
+      "github": "https://github.com/",
+      "demo": "https://app.powerbi.com/view?r=eyJrIjoiM2E2NTYxNjgtYWVkZC00YmNkLWE4MGEtMmVkOGZhZGUyY2NmIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
+      "skills":["Power BI, Python"],
+      "summary":"testinhlbshhgosntr zhtbhg"
+    },
+    {
+      "title": "Super Store Sales Report",
+      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1687254154122x772468878716450200%2FScreenshot%25202023-06-20%2520151211.png",
+      "github": "https://github.com/",
+      "demo": "https://app.powerbi.com/view?r=eyJrIjoiOWZhNGFjNDUtOWVjZS00MGFjLWFkNzgtN2U1ZjFlOWEzYjYyIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
+      "skills":["Power BI, Python"],
+      "summary":"testinhlbshhgosntr zhtbhg"
+    },
+    {
+      "title": "T20 World Cup Analysis",
+      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1674914733894x204534148629271780%2FPicture1.png",
+      "github": "https://github.com/",
+      "demo": "https://app.powerbi.com/view?r=eyJrIjoiOWZhNGFjNDUtOWVjZS00MGFjLWFkNzgtN2U1ZjFlOWEzYjYyIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
+      "skills":["Power BI, Python"],
+      "summary":"testinhlbshhgosntr zhtbhg"
+    },
+    {
+      "title": "Xmas Gift Sales Report",
+      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1704813508473x542831173356496600%2FThumbnial.jpg",
+      "github": "https://github.com/",
+      "demo": "https://app.powerbi.com/view?r=eyJrIjoiOWZhNGFjNDUtOWVjZS00MGFjLWFkNzgtN2U1ZjFlOWEzYjYyIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
+      "skills":["Power BI, Python"],
+      "summary":"testinhlbshhgosntr zhtbhg"
+    },
+    {
+      "title": "Mobile Phone Sales Report",
+      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1683985505320x929558260127787600%2FPicture1.png",
+      "github": "https://github.com/",
+      "demo":"https://app.powerbi.com/view?r=eyJrIjoiM2E2NTYxNjgtYWVkZC00YmNkLWE4MGEtMmVkOGZhZGUyY2NmIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
+      "skills":["Power BI, Python"],
+      "summary":"testinhlbshhgosntr zhtbhg"
+    }
+  ]
+}

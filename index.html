@@ -15,9 +15,11 @@
 
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/mediaqueries.css" />
-    <link rel="stylesheet" href="assets/css/extrastyle.css" />
+     <link rel="stylesheet" href="assets/css/extrastyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
     <nav id="desktop-nav">
@@ -25,7 +27,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -40,24 +42,23 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="./#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="./#experience" onclick="toggleMenu()">Skiils</a></li>
+          <li><a href="./#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="./#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile" class="background1">
-      <!-- <div class="section__pic-container">
-       <img src="./assets/img/IMG_6646.jpg" alt="Ritesh Ojha profile picture" /> 
-      </div> -->
+    <section id="profile" class="background1" data-aos="fade-up"
+    data-aos-duration="3000">
+
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Ritesh Ojha</h1>
         <p class="section__text__p2"><span class="typed-text"></span></p>   <!-- Typed.js -->
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
+            class="btn btn-color-1"
             onclick="window.open('./assets/img/resume-example.pdf')"
           >
             Download CV
@@ -87,7 +88,7 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -133,7 +134,7 @@
         onclick="location.href='./#experience'" 
       />
     </section>
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div id="experience-details-container" class="experience-details-container">
@@ -322,13 +323,26 @@
         onclick="location.href='./#projects'"
       />
     </section>  -->
+    
+    
+    <section id="projects" data-aos="fade-up">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container" >
+        <div class="project-containers" id="projects-container" >
+        </div>
+        
+      </div>
+      <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>  
+    
     <!--<section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
-            <div class="article-container">
+            <div class="article-container" >
               <img
                 src="./assets/img/project-1.png"
                 alt="Project 1"
@@ -407,8 +421,9 @@
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
-    </section>
-    <section id="contact">
+    </section> -->
+    <section id="contact" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -418,7 +433,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:riteshojha2002@gmail.com">RITESHOJHA2002@GMAIL.COM</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -426,26 +441,42 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/ojharitesh">LinkedIn</a></p>
         </div>
       </div>
     </section>
+
+
+    <!-- Include modal -->
+
+    
+    <section id="music">
+      <h1 class="title">My Favourite Songs</h1>
+        <div class="music-container" style="width:100%;">
+          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcmMuW52BXP0" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy" style="width:100%;"  id="spotify-playlist"></iframe>      
+        </div>
+
+    </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
       <p>Copyright &#169; 2023 Ritesh Ojha. All Rights Reserved.</p>
-    </footer> -->
+    </footer> 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/animation.js"></script> -->
 
 
   </body>

@@ -1,3 +1,4 @@
+AOS.init();
 
 
 function toggleMenu() {
@@ -10,7 +11,7 @@ function toggleMenu() {
 }
 
 var options = {
-  strings: ["Data Analyst",'Data Engineer', 'Business Application Developer'],
+  strings: ["Data Analyst",'Data Engineer', 'Freelancer','.....'],
   typeSpeed: 70,
   backSpeed: 70,
   loop: true
@@ -41,7 +42,7 @@ const summaryText = [
   "Aspiring data analyst with experience in Python, SQL, JavaScript, and Power BI. Interned as a data analyst at Junior Robo, designing data systems in Google Sheets and visualizing sales data in Power BI dashboards. Additional experience includes web scraping, data preprocessing with Pandas, machine learning model evaluation, and leading a sales analysis project extracting e-commerce data. Seeking to utilize analytical skills, technical knowledge, and hands-on experience to add value as a data analyst.",
 ];
 
-const highlightedWords = ["Python", "SQL","Power BI"];
+const highlightedWords = ["Python", "SQL","Power BI",'JavaScript','visualizing','web scraping','data preprocessing','Pandas'];
 
 for (let i = 0; i < summaryText.length; i++) {
   for (const word of highlightedWords) {
@@ -70,12 +71,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   
   function populateExperienceDetails(data) {
-    console.log(data);
+    // console.log(data);
     const container = document.getElementById('about-containers');
     // Loop through the data and create HTML elements for each skill category
     data.forEach(category => {
       const detailsContainer = document.createElement('div');
       detailsContainer.classList.add('details-container');
+      detailsContainer.setAttribute('data-aos',"zoom-in");
 
       const subTitle = document.createElement('h2');
       subTitle.classList.add('experience-sub-title');
@@ -116,5 +118,161 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   fetch("./assets/json/project.json")
+//     .then(response => response.json())
+//     .then(data => {
+//       const projectsContainer = document.getElementById("projects-container");
 
+//       // Loop through each project in the JSON data
+//       data.projects.forEach(project => {
+//         // Create project container
+//         const projectContainer = document.createElement("div");
+//         projectContainer.classList.add("details-container", "color-container");
+
+//         // Create link for lightbox
+//         const lightboxLink = document.createElement("a");
+//         lightboxLink.href = project.image; // Set the image URL
+//         lightboxLink.classList.add("portfolio-details-lightbox");
+//         lightboxLink.setAttribute("data-glightbox", ""); // Add data-glightbox attribute
+//         lightboxLink.setAttribute("data-title", project.title); // Add data-title attribute
+
+//         // Create image element
+//         const img = document.createElement("img");
+//         img.src = project.image;
+//         img.alt = project.title;
+//         img.classList.add("project-img");
+
+//         // Append image to lightbox link
+//         lightboxLink.appendChild(img);
+
+//         // // Create iframe element
+//         // const iframe = document.createElement("iframe");
+//         // iframe.src = project.demo;
+//         // iframe.classList.add("project-iframe");
+
+//         // // Append iframe to lightbox link
+//         // lightboxLink.appendChild(iframe);
+
+//         // Create project title for outside lightbox
+//         const title = document.createElement("h2");
+//         title.classList.add("experience-sub-title", "project-title");
+//         title.textContent = project.title;
+
+//         // Create GitHub button for outside lightbox
+//         const githubBtn = document.createElement("button");
+//         githubBtn.classList.add("btn", "btn-color-1");
+//         githubBtn.textContent = "Github";
+//         githubBtn.onclick = function () {
+//           window.location.href = project.github;
+//         };
+
+//         // Create Live Demo button for outside lightbox
+//         const demoBtn = document.createElement("button");
+//         demoBtn.classList.add("btn", "btn-color-1");
+//         demoBtn.textContent = "Live Demo";
+//         demoBtn.onclick = function () {
+//           window.open(project.demo, '_blank');
+//         };
+
+//         // Append elements to project container for outside lightbox
+//         projectContainer.appendChild(lightboxLink); // Image and iframe inside lightbox
+//         projectContainer.appendChild(title);
+//         projectContainer.appendChild(githubBtn);
+//         projectContainer.appendChild(demoBtn);
+
+//         // Append project container to projects container
+//         projectsContainer.appendChild(projectContainer);
+//       });
+
+//       // Initialize lightbox
+//       const lightbox = GLightbox({
+//         selector: '.portfolio-details-lightbox'
+//       });
+//     })
+//     .catch(error => {
+//       console.error("Error fetching projects:", error);
+//     });
+// });
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("./assets/json/project.json")
+    .then(response => response.json())
+    .then(data => {
+      const projectsContainer = document.getElementById("projects-container");
+
+      // Loop through each project in the JSON data
+      data.projects.forEach(project => {
+        // Create project container
+        const projectContainer = document.createElement("div");
+        projectContainer.classList.add("details-container", "color-container");
+        projectContainer.setAttribute('data-aos',"zoom-in");
+
+        // Create link for lightbox
+        const lightboxLink = document.createElement("a");
+        lightboxLink.href = project.image; // Set the image URL
+        lightboxLink.classList.add("portfolio-details-lightbox");
+        lightboxLink.setAttribute("data-glightbox", ""); // Add data-glightbox attribute
+        lightboxLink.setAttribute("data-title", project.title); // Add data-title attribute
+
+        // Create image element
+        const img = document.createElement("img");
+        img.src = project.image;
+        img.alt = project.title;
+        img.classList.add("project-img");
+
+        // Add tooltip for project summary
+        img.setAttribute("title", project.summary);
+
+        // Append image to lightbox link
+        lightboxLink.appendChild(img);
+
+        // Create project title for outside lightbox
+        const title = document.createElement("h2");
+        title.classList.add("experience-sub-title", "project-title");
+        title.textContent = project.title;
+
+        // Create GitHub button for outside lightbox
+        const githubBtn = document.createElement("button");
+        githubBtn.classList.add("btn", "btn-color-1");
+        githubBtn.textContent = "Github";
+        githubBtn.onclick = function () {
+          window.location.href = project.github;
+        };
+
+        // Create Live Demo button for outside lightbox
+        const demoBtn = document.createElement("button");
+        demoBtn.classList.add("btn", "btn-color-1");
+        demoBtn.textContent = "Live Demo";
+        demoBtn.onclick = function () {
+          window.open(project.demo, '_blank');
+        };
+
+        // Append elements to project container for outside lightbox
+        projectContainer.appendChild(lightboxLink); // Image and iframe inside lightbox
+        projectContainer.appendChild(title);
+        projectContainer.appendChild(githubBtn);
+        projectContainer.appendChild(demoBtn);
+
+        // Append project container to projects container
+        projectsContainer.appendChild(projectContainer);
+      });
+
+      // Initialize lightbox
+      const lightbox = GLightbox({
+        selector: '.portfolio-details-lightbox'
+      });
+    })
+    .catch(error => {
+      console.error("Error fetching projects:", error);
+    });
+});
 

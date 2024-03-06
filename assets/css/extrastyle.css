@@ -1,7 +1,18 @@
 .highlight {
-    color: #e66465;
+    color: #0563bb;
   }
 
 .typed-text-summary {
 content: normal !important;
+}
+
+
+.gslide-media {
+  width: 80% !important;
+  height: auto !important;
+}
+
+.gslide-description {
+  display: block;
+  
 }
