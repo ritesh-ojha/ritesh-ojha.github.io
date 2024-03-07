@@ -80,5 +80,5 @@ function createIcon() {
 }
 
 // Call the function to create icons at a regular interval
-setInterval(createIcon, iconDelay);
+// setInterval(createIcon, iconDelay);
 
