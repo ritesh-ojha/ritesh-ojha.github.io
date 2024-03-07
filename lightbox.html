@@ -1,10 +1,113 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+            /* Hide scrollbars */
+        }
+
+        .icons {
+            position: absolute;
+            background-size: cover;
+            /* Adjust the background size if needed */
+            /* Add any other necessary CSS properties for positioning and styling */
+            filter: grayscale(100%);
+            animation: animIcon linear infinite;
+            
+        }
+
+        .icon:hover {
+            filter: grayscale(0%);
+        }
+
+
+        @keyframes animIcon {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(-2000px);
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <script>
+        const icons = [
+            'python.png',
+            'ssm.png',
+            'powerbi.png',
+            'mysql.png',
+            'looker.png',
+            'tableau.png',
+            'excel.png'
+            // Add more icon paths as needed
+        ];
+
+        const iconLimit = 80; // Maximum number of icons in the viewport
+        const iconDelay = 300; // Adjust the delay between each icon appearance (in milliseconds)
+        let iconCount = 0;
+        const iconDistance = 500; // Adjust the distance between icons
+        let lastTwoIndices = [-1]; // Initialize with indices that don't exist
+
+        function getRandomIconIndex() {
+            let randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * icons.length);
+            } while (lastTwoIndices.includes(randomIndex));
+            lastTwoIndices.shift();
+            lastTwoIndices.push(randomIndex);
+            return randomIndex;
+        }
+
+        function getRandomIconSize() {
+            return Math.floor(Math.random() * (30 - 10 + 1)) + 10; // Random size between 30 and 80
+        }
+
+        function getRandomAnimationDuration() {
+            return Math.floor(Math.random() * (30 - 10 + 1)) + 10; // Random duration between 10 and 30 seconds
+        }
+
+        function createIcon() {
+            if (iconCount < iconLimit) {
+                const randomIconIndex = getRandomIconIndex();
+                const iconPath = icons[randomIconIndex];
+                const iconSize = getRandomIconSize(); // Get random size for the icon
+                const icon = document.createElement("div");
+                icon.classList.add("icons");
+                icon.style.backgroundImage = `url('/assets/icons/${iconPath}')`;
+                icon.style.width = iconSize + "px"; // Set random width
+                icon.style.height = iconSize + "px"; // Set random height
+                const animationDuration = getRandomAnimationDuration(); // Get random animation duration
+                icon.style.animationDuration = `${animationDuration}s`; // Set random animation duration
+
+                // Set icon position at the bottom of the viewport
+                icon.style.left = Math.random() * (window.innerWidth - iconSize) + "px"; // Random X position
+                icon.style.top = window.innerHeight + "px"; // Set icon at the bottom
+
+                document.body.appendChild(icon);
+
+                // Increment icon count
+                iconCount++;
+
+                // Check if the icon moves out of the viewpoint and remove it
+                setInterval(() => {
+                    if (icon.getBoundingClientRect().bottom < 0) {
+                        icon.remove();
+                        iconCount--;
+                    }
+                }, 100); // Check every 100 milliseconds
+            }
+        }
+
+        // Call the function to create icons at a regular interval
+        setInterval(createIcon, iconDelay);
+    </script>
 </body>
 </html>

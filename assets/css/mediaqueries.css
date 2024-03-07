@@ -12,6 +12,8 @@
     height: fit-content;
   }
 
+  
+
 
 }
 
@@ -29,6 +31,10 @@
   }
   #profile,
   .section-container {
+    display: flex;
+    justify-content: center;
+  }
+  #about, .section-container{
     display: block;
   }
   .arrow {
@@ -41,9 +47,17 @@
   section {
     margin: 0 5%;
   }
+
+  .section__pic_pro-container {
+    display: none;
+  }
   .section__pic-container {
     width: 275px;
     height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .section__text{
     margin: 0 auto 2rem;
   }
   .about-containers {
@@ -95,6 +109,10 @@
     height: 46vw;
     justify-content: center;
   }
+
+  .section__text {
+    justify-content: center;
+  }
   .section__text__p2 {
     font-size: 1.25rem;
   }
@@ -104,6 +122,10 @@
   .text-container {
     text-align: justify;
   }
+
+  #projects-container {
+    grid-template-columns: repeat(2, 1fr); /* Change back to a two-column layout for larger mobile screens */
+  }
   
 }
 
@@ -111,19 +133,14 @@
   .music-container {
     padding-bottom: 100%; /* Adjust for smaller screens (e.g., mobile) */
   }
+  #projects-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
 }
 
 @media screen and (min-width: 768px) {
   .music-container {
     padding-bottom: 30%; /* Maintain aspect ratio for larger screens (e.g., desktop) */
-  }
-}
-
-
-/* Media query for screens smaller than 768px (typical tablet and mobile screens) */
-@media (min-width: 768px) {
-  #projects-container {
-    grid-template-columns: repeat(2, 1fr); /* Change back to a two-column layout for larger mobile screens */
   }
 }
 

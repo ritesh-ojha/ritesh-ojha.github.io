@@ -20,21 +20,30 @@ var options = {
 var typed = new Typed(".typed-text", options);
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  var profile = document.getElementById("profile");
-  var isBackground1 = true;
+// document.addEventListener("DOMContentLoaded", function() {
+//   var profile = document.getElementById("profile");
+//   var isBackground1 = true;
 
-  setInterval(function() {
-    if (isBackground1) {
-      profile.classList.remove("background1");
-      profile.classList.add("background2");
-    } else {
-      profile.classList.remove("background2");
-      profile.classList.add("background1");
-    }
-    isBackground1 = !isBackground1;
-  }, 2000); // Change background every 5 seconds
-});
+//   setInterval(function() {
+//     if (isBackground1) {
+//       profile.classList.remove("background1");
+//       profile.classList.add("background2");
+//     } else {
+//       profile.classList.remove("background2");
+//       profile.classList.add("background1");
+//     }
+//     isBackground1 = !isBackground1;
+//   }, 2000); // Change background every 5 seconds
+// });
+
+let image = document.getElementById("section__pic");
+let images = ['./assets/img/IMG_6647.webp','./assets/img/IMG_6646.webp']
+let index = 0;
+
+setInterval(function(){
+  image.setAttribute('src', images[index]);
+  index = (index + 1) % images.length;
+}, 3000);
 
 
 
@@ -88,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       category.skills.forEach(skill => {
         const article = document.createElement('article');
+        article.setAttribute('data-aos',"zoom-out-down");
         const icon = document.createElement('img');
         icon.src = "./assets/img/checkmark.png";
         icon.alt = "Experience icon";
