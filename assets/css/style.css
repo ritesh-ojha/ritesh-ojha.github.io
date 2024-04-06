@@ -355,7 +355,7 @@ section {
 }
 
 .about-pic {
-  border-radius: 50px;
+  border-radius: 15px;
   
   filter: grayscale(100%) contrast(1.2);
 
@@ -444,6 +444,7 @@ article .icon {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
+
 
 .color-container {
   border-color: rgb(163, 163, 163);

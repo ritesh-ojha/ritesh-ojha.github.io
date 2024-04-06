@@ -8,7 +8,9 @@
         {"name": "Data visualization", "level": "Intermediate"},
         {"name": "Python", "level": "Advanced"},
         {"name": "Looker Studio", "level": "Intermediate"},
-        {"name": "Tableau", "level": "Intermediate"}
+        {"name": "Tableau", "level": "Intermediate"},
+        {"name": "AWS", "level": "Intermediate"},
+        {"name": "Azure", "level": "Intermediate"}
       ]
     },
     {
@@ -19,8 +21,11 @@
         {"name": "PySpark", "level": "Intermediate"},
         {"name": "Git", "level": "Basic"},
         {"name": "Docker", "level": "Basic"},
-        {"name": "ETL", "level": "Intermediate"},
-        {"name": "SQL", "level": "Intermediate"}
+        {"name": "SQL", "level": "Intermediate"},
+        {"name": "JavaScript", "level": "Basic"},
+        {"name": "Airflow", "level": "Intermediate"},
+        {"name": "AWS", "level": "Intermediate"},
+        {"name": "Azure", "level": "Intermediate"}
       ]
     }
   ]

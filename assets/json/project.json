@@ -9,26 +9,19 @@
       "summary":"testinhlbshhgosntr zhtbhg"
     },
     {
-      "title": "Annual Deaths Report",
-      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1694614760782x576339501888930370%2Fdashboad_page-0001-min.jpg",
-      "github": "https://github.com/",
-      "demo": "https://app.powerbi.com/view?r=eyJrIjoiM2E2NTYxNjgtYWVkZC00YmNkLWE4MGEtMmVkOGZhZGUyY2NmIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
-      "skills":["Power BI, Python"],
-      "summary":"testinhlbshhgosntr zhtbhg"
-    },
-    {
-      "title": "Super Store Sales Report",
-      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1687254154122x772468878716450200%2FScreenshot%25202023-06-20%2520151211.png",
-      "github": "https://github.com/",
-      "demo": "https://app.powerbi.com/view?r=eyJrIjoiOWZhNGFjNDUtOWVjZS00MGFjLWFkNzgtN2U1ZjFlOWEzYjYyIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
-      "skills":["Power BI, Python"],
-      "summary":"testinhlbshhgosntr zhtbhg"
-    },
-    {
       "title": "T20 World Cup Analysis",
       "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1674914733894x204534148629271780%2FPicture1.png",
       "github": "https://github.com/",
       "demo": "https://app.powerbi.com/view?r=eyJrIjoiOWZhNGFjNDUtOWVjZS00MGFjLWFkNzgtN2U1ZjFlOWEzYjYyIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
+      "skills":["Power BI, Python"],
+      "summary":"testinhlbshhgosntr zhtbhg"
+    },
+
+    {
+      "title": "Mobile Phone Sales Report",
+      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1683985505320x929558260127787600%2FPicture1.png",
+      "github": "https://github.com/",
+      "demo":"https://app.powerbi.com/view?r=eyJrIjoiM2E2NTYxNjgtYWVkZC00YmNkLWE4MGEtMmVkOGZhZGUyY2NmIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
       "skills":["Power BI, Python"],
       "summary":"testinhlbshhgosntr zhtbhg"
     },
@@ -41,12 +34,20 @@
       "summary":"testinhlbshhgosntr zhtbhg"
     },
     {
-      "title": "Mobile Phone Sales Report",
-      "image": "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Ff2fa1cdd9340fae53fcb49f577292458.cdn.bubble.io%2Ff1683985505320x929558260127787600%2FPicture1.png",
-      "github": "https://github.com/",
-      "demo":"https://app.powerbi.com/view?r=eyJrIjoiM2E2NTYxNjgtYWVkZC00YmNkLWE4MGEtMmVkOGZhZGUyY2NmIiwidCI6ImZlMWNlODhmLTlmOTgtNGI3Yy1iZTk0LTkxZDU2MWZhZGQ5MSJ9",
+      "title": "Spotify Data Engineering",
+      "image": "assets/img/spotify_de.png",
+      "github": "https://github.com/ritesh-ojha/Data-Engineering/tree/main/Spotify",
+      "demo": "#",
       "skills":["Power BI, Python"],
       "summary":"testinhlbshhgosntr zhtbhg"
+    },
+    {
+      "title": "Podcast Episodes",
+      "image": "assets/img/podcast.png",
+      "github": "https://github.com/ritesh-ojha/Data-Engineering/tree/main/Podcast",
+      "demo": "#",
+      "skills":["Airflow, Python, Postgres, Docker"],
+      "summary":" I created a data pipeline using Airflow. The pipeline will download podcast episodes. I stored our results in a Postgres database that we can easily query."
     }
   ]
 }
