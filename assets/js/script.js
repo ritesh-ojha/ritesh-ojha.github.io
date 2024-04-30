@@ -48,7 +48,7 @@ setInterval(function(){
 
 
 const summaryText = [
-  "Aspiring data analyst with experience in Python, SQL, JavaScript, and Power BI. Interned as a data analyst at Junior Robo, designing data systems in Google Sheets and visualizing sales data in Power BI dashboards. Additional experience includes web scraping, data preprocessing with Pandas, machine learning model evaluation, and leading a sales analysis project extracting e-commerce data. Seeking to utilize analytical skills, technical knowledge, and hands-on experience to add value as a data analyst.",
+  "Welcome! I'm Ritesh Ojha, a dedicated Data Analyst and Data Engineer passionate about transforming raw data into actionable insights. With a Bachelor's degree in IT(Data Science) from Ajeenkya DY Patil University, I specialize in leveraging advanced analytics and cloud technologies to drive business growth and innovation. From data wrangling and visualization to building scalable data pipelines and predictive models, I thrive on solving complex data challenges and delivering impactful solutions. Certified in Google Data Analytics and AWS Academy Cloud Foundations, I am committed to continuous learning and staying at the forefront of emerging trends in data science and engineering. Let's connect and explore how data can empower your organization's success!",
 ];
 
 const highlightedWords = ["Python", "SQL","Power BI",'JavaScript','visualizing','web scraping','data preprocessing','Pandas'];
