@@ -11,7 +11,7 @@ function toggleMenu() {
 }
 
 var options = {
-  strings: ["Data Analyst",'Data Engineer', 'Freelancer','.....'],
+  strings: ["Data Analyst",'Data Engineer', 'Freelancer','DevOps Engineer','.....'],
   typeSpeed: 70,
   backSpeed: 70,
   loop: true
