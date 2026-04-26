@@ -1,0 +1,27 @@
+1:"$Sreact.fragment"
+2:I[3479,["177","static/chunks/app/layout-855a9e8b8488176c.js"],"ThemeProvider"]
+3:I[9766,[],""]
+4:I[8924,[],""]
+5:I[3486,["229","static/chunks/229-4a46636c14a32286.js","345","static/chunks/app/not-found-dd4477ea524e39d4.js"],"default"]
+6:I[945,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"Navbar"]
+7:I[9513,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"Hero"]
+8:I[7736,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"About"]
+9:I[9319,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"Skills"]
+a:I[3364,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"Projects"]
+b:I[3525,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"Experience"]
+c:I[5045,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"Achievements"]
+d:I[7079,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"Contact"]
+e:I[8455,["229","static/chunks/229-4a46636c14a32286.js","974","static/chunks/app/page-0b6b0e738271edbb.js"],"Footer"]
+f:I[4431,[],"OutletBoundary"]
+11:I[5278,[],"AsyncMetadataOutlet"]
+13:I[4431,[],"ViewportBoundary"]
+15:I[4431,[],"MetadataBoundary"]
+16:"$Sreact.suspense"
+18:I[7150,[],""]
+:HL["/_next/static/css/af3964475d4c9d58.css","style"]
+0:{"P":null,"b":"FmeC84BqOsLGLi1XxYsCR","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/af3964475d4c9d58.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"className":"font-body antialiased","children":["$","$L2",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L5",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen","children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{}],["$","$Lc",null,{}],["$","$Ld",null,{}],["$","$Le",null,{}]]}],null,["$","$Lf",null,{"children":["$L10",["$","$L11",null,{"promise":"$@12"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$L13",null,{"children":"$L14"}],null],["$","$L15",null,{"children":["$","div",null,{"hidden":true,"children":["$","$16",null,{"fallback":null,"children":"$L17"}]}]}]]}],false]],"m":"$undefined","G":["$18",[]],"s":false,"S":true}
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+10:null
+19:I[622,[],"IconMark"]
+12:{"metadata":[["$","title","0",{"children":"Ritesh Ojha | Senior Software & AI Engineer"}],["$","meta","1",{"name":"description","content":"Portfolio of Ritesh Ojha, a Senior Software Engineer and AI Specialist specializing in Full Stack Development and Machine Learning."}],["$","meta","2",{"property":"og:title","content":"Ritesh Ojha Portfolio"}],["$","meta","3",{"property":"og:description","content":"Senior Software & AI Engineer specialized in high-performance full-stack applications."}],["$","meta","4",{"property":"og:type","content":"website"}],["$","meta","5",{"name":"twitter:card","content":"summary"}],["$","meta","6",{"name":"twitter:title","content":"Ritesh Ojha Portfolio"}],["$","meta","7",{"name":"twitter:description","content":"Senior Software & AI Engineer specialized in high-performance full-stack applications."}],["$","link","8",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}],["$","$L19","9",{}]],"error":null,"digest":"$undefined"}
+17:"$12:metadata"

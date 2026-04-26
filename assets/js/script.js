@@ -109,8 +109,17 @@ document.addEventListener("DOMContentLoaded", function() {
         const skillLevel = document.createElement('p');
         skillLevel.textContent = skill.level;
 
+        // Add progress bar
+        const progressBar = document.createElement('div');
+        progressBar.className = 'skill-progress';
+        const fill = document.createElement('div');
+        fill.className = 'progress-fill';
+        const levels = { 'Advanced': 90, 'Intermediate': 70, 'Basic': 50 };
+        fill.style.width = levels[skill.level] + '%';
+        progressBar.appendChild(fill);
         content.appendChild(skillTitle);
         content.appendChild(skillLevel);
+        content.appendChild(progressBar);
 
         article.appendChild(icon);
         article.appendChild(content);
@@ -125,87 +134,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   fetch("./assets/json/project.json")
-//     .then(response => response.json())
-//     .then(data => {
-//       const projectsContainer = document.getElementById("projects-container");
-
-//       // Loop through each project in the JSON data
-//       data.projects.forEach(project => {
-//         // Create project container
-//         const projectContainer = document.createElement("div");
-//         projectContainer.classList.add("details-container", "color-container");
-
-//         // Create link for lightbox
-//         const lightboxLink = document.createElement("a");
-//         lightboxLink.href = project.image; // Set the image URL
-//         lightboxLink.classList.add("portfolio-details-lightbox");
-//         lightboxLink.setAttribute("data-glightbox", ""); // Add data-glightbox attribute
-//         lightboxLink.setAttribute("data-title", project.title); // Add data-title attribute
-
-//         // Create image element
-//         const img = document.createElement("img");
-//         img.src = project.image;
-//         img.alt = project.title;
-//         img.classList.add("project-img");
-
-//         // Append image to lightbox link
-//         lightboxLink.appendChild(img);
-
-//         // // Create iframe element
-//         // const iframe = document.createElement("iframe");
-//         // iframe.src = project.demo;
-//         // iframe.classList.add("project-iframe");
-
-//         // // Append iframe to lightbox link
-//         // lightboxLink.appendChild(iframe);
-
-//         // Create project title for outside lightbox
-//         const title = document.createElement("h2");
-//         title.classList.add("experience-sub-title", "project-title");
-//         title.textContent = project.title;
-
-//         // Create GitHub button for outside lightbox
-//         const githubBtn = document.createElement("button");
-//         githubBtn.classList.add("btn", "btn-color-1");
-//         githubBtn.textContent = "Github";
-//         githubBtn.onclick = function () {
-//           window.location.href = project.github;
-//         };
-
-//         // Create Live Demo button for outside lightbox
-//         const demoBtn = document.createElement("button");
-//         demoBtn.classList.add("btn", "btn-color-1");
-//         demoBtn.textContent = "Live Demo";
-//         demoBtn.onclick = function () {
-//           window.open(project.demo, '_blank');
-//         };
-
-//         // Append elements to project container for outside lightbox
-//         projectContainer.appendChild(lightboxLink); // Image and iframe inside lightbox
-//         projectContainer.appendChild(title);
-//         projectContainer.appendChild(githubBtn);
-//         projectContainer.appendChild(demoBtn);
-
-//         // Append project container to projects container
-//         projectsContainer.appendChild(projectContainer);
-//       });
-
-//       // Initialize lightbox
-//       const lightbox = GLightbox({
-//         selector: '.portfolio-details-lightbox'
-//       });
-//     })
-//     .catch(error => {
-//       console.error("Error fetching projects:", error);
-//     });
-// });
-
-
 
 
 
@@ -266,9 +194,20 @@ document.addEventListener("DOMContentLoaded", function () {
           window.open(project.demo, '_blank');
         };
 
+        // Create tech badges container
+        const techContainer = document.createElement('div');
+        techContainer.className = 'project-tech';
+        project.skills.forEach(skill => {
+          const badge = document.createElement('span');
+          badge.className = 'tech-badge';
+          badge.textContent = skill;
+          techContainer.appendChild(badge);
+        });
+
         // Append elements to project container for outside lightbox
         projectContainer.appendChild(lightboxLink); // Image and iframe inside lightbox
         projectContainer.appendChild(title);
+        projectContainer.appendChild(techContainer);
         projectContainer.appendChild(githubBtn);
         projectContainer.appendChild(demoBtn);
 
@@ -286,3 +225,50 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// Dynamic Copyright Year
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Theme Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'light') {
+  document.documentElement.setAttribute('data-theme', 'light');
+  themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+}
+
+themeToggle.addEventListener('click', () => {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  document.documentElement.setAttribute('data-theme', isLight ? 'dark' : 'light');
+  localStorage.setItem('theme', isLight ? 'dark' : 'light');
+  themeToggle.innerHTML = isLight ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+});
+
+// Scroll Progress
+window.addEventListener('scroll', () => {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+  document.getElementById('scroll-progress').style.width = scrollPercent + '%';
+});
+
+// Back to Top
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTop.classList.add('show');
+  } else {
+    backToTop.classList.remove('show');
+  }
+});
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Hide Loading Screen
+window.addEventListener('load', () => {
+  document.getElementById('loading-screen').style.opacity = '0';
+  setTimeout(() => {
+    document.getElementById('loading-screen').style.display = 'none';
+  }, 500);
+});

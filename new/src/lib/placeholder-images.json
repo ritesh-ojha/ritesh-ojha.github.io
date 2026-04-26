@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract tech gradient background",
+      "imageUrl": "https://picsum.photos/seed/tech/1920/1080",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "project-ai",
+      "description": "AI Dashboard interface",
+      "imageUrl": "https://picsum.photos/seed/ai-dashboard/800/600",
+      "imageHint": "ai dashboard"
+    },
+    {
+      "id": "project-ecommerce",
+      "description": "Modern ecommerce mobile app",
+      "imageUrl": "https://picsum.photos/seed/ecommerce/800/600",
+      "imageHint": "ecommerce app"
+    },
+    {
+      "id": "project-cloud",
+      "description": "Cloud infrastructure diagram",
+      "imageUrl": "https://picsum.photos/seed/cloud/800/600",
+      "imageHint": "cloud tech"
+    }
+  ]
+}

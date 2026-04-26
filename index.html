@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Ritesh Ojha | Data Analyst & Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Ritesh Ojha - Data Analyst and Data Engineer specializing in Power BI, Python, SQL, and Cloud Technologies">
+    <meta name="keywords" content="Data Analyst, Data Engineer, Power BI, Python, SQL, Portfolio">
+    <meta name="author" content="Ritesh Ojha">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ritesh Ojha | Data Analyst & Engineer">
+    <meta property="og:description" content="Portfolio showcasing data analytics and engineering projects">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/fevicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/fevicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/fevicon/favicon-16x16.png">
@@ -13,22 +24,40 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    
+    <!-- Stylesheets -->
     <link defer rel="stylesheet" href="/assets/css/style.css" />
     <link defer rel="stylesheet" href="/assets/css/mediaqueries.css" />
     <link defer rel="stylesheet" href="/assets/css/extrastyle.css" />
     <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link defer rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   </head>
   <body>
-<!--  
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div> -->
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="loader-text">Loading</div>
+        <div class="loader-bar"></div>
+      </div>
+    </div>
 
-    
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation -->
     <nav id="desktop-nav">
       <div class="logo"><span class="highlight">O</span>JHA</div>
       <div>
@@ -37,6 +66,7 @@
           <li><a href="blog.html">Blogs</a></li>
           <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -52,27 +82,25 @@
         <div class="menu-links">
           <li><a href="./#about" onclick="toggleMenu()">About</a></li>
           <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
-          <li><a href="./#experience" onclick="toggleMenu()">Skiils</a></li>
+          <li><a href="./#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="./#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="./#certifications" onclick="toggleMenu()">Certifications</a></li>
           <li><a href="./#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-      </div>
     </nav>
-    <section id="profile" data-aos="fade-up" data-aos-duration="3000">
 
+    <!-- Profile Section -->
+    <section id="profile" data-aos="fade-up" data-aos-duration="3000">
       <div class="section__pic_pro-container">
-        <img src="./assets/img/IMG_6646.png" alt="John Doe profile picture" class="section__pic" id="section__pic"/>
+        <img src="./assets/img/IMG_6646.png" alt="Ritesh Ojha profile picture" class="section__pic" id="section__pic"/>
       </div>
 
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Ritesh Ojha</h1>
-        <p class="section__text__p2"><span class="typed-text"></span></p>   <!-- Typed.js -->
+        <p class="section__text__p2"><span class="typed-text"></span></p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/resume.pdf')"
-          >
+          <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -80,132 +108,101 @@
           </button>
         </div>
         <div id="socials-container">
-          <i class="fa-brands fa-linkedin-in fa-xl"
-
-            alt="My LinkedIn profile"
-            
-            onclick="location.href='https://linkedin.com/'"
-          ></i>
-          <i class="fa-brands fa-github fa-2xl"
-            alt="My Github profile"
-            
-            onclick="location.href='https://github.com/'"
-          ></i>
-       
-          <i class="fa-brands fa-kaggle fa-2xl"
-            alt="My Github profile"
-            
-            onclick="location.href='https://github.com/'"
-          ></i>
+          <i class="fa-brands fa-linkedin-in fa-xl" alt="My LinkedIn profile" onclick="window.open('https://www.linkedin.com/in/ojharitesh', '_blank')"></i>
+          <i class="fa-brands fa-github fa-2xl" alt="My GitHub profile" onclick="window.open('https://github.com/ritesh-ojha', '_blank')"></i>
+          <i class="fa-brands fa-kaggle fa-2xl" alt="My Kaggle profile" onclick="window.open('https://www.kaggle.com/ojharitesh', '_blank')"></i>
         </div>
-      </div>
-      
     </section>
+
+    <!-- About Section -->
     <section id="about" data-aos="fade-up">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img
-            src="./assets/img/3.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/img/3.png" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/img/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/img/experience.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
               <p>1+ Year <br />Data Analyst</p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/img/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/img/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
-              <p>B.Tech. Bachelors Degree</p>
+              <p>B.Tech. Bachelors Degree<br/>IT (Data Science)</p>
             </div>
-          </div>
           <div class="text-container">
-            <p>
-              <span class="typed-text-summary"></span>
-            </p>
+            <p><span class="typed-text-summary"></span></p>
           </div>
-        </div>
       </div>
-      <img
-        src="./assets/img/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'" 
-      />
+      <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
+
+    <!-- Skills Section -->
     <section id="experience" data-aos="fade-up">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div id="experience-details-container" class="experience-details-container">
-        <div class="about-containers" id="about-containers">
-
-        </div>
-        <!-- Experience details will be populated here -->
-      </div>
+        <div class="about-containers" id="about-containers"></div>
       <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
     </section>
-    
-    
+
+    <!-- Projects Section -->
     <section id="projects" data-aos="fade-up">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container" >
-        <div class="project-containers" id="projects-container" ></div>
+      <div class="experience-details-container">
+        <div class="project-containers" id="projects-container"></div>
+      <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certifications'" />
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" data-aos="fade-up">
+      <p class="section__text__p1">My Achievements</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container certification-card">
+            <div class="certification-icon">
+              <i class="fas fa-certificate fa-3x" style="color: #4285F4;"></i>
+            </div>
+            <h2 class="experience-sub-title">Google Data Analytics</h2>
+            <p>Professional Certificate</p>
+            <p class="certification-date">2023</p>
+            <button class="btn btn-color-1" onclick="window.open('https://www.coursera.org/account/accomplishments/professional-cert/YOUR_CERT_ID', '_blank')">View Certificate</button>
+          </div>
+          <div class="details-container color-container certification-card">
+            <div class="certification-icon">
+              <i class="fab fa-aws fa-3x" style="color: #FF9900;"></i>
+            </div>
+            <h2 class="experience-sub-title">AWS Academy Cloud Foundations</h2>
+            <p>Foundational Certification</p>
+            <p class="certification-date">2023</p>
+            <button class="btn btn-color-1" onclick="window.open('https://www.aws.training/Verification', '_blank')">View Certificate</button>
+          </div>
       </div>
       <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>  
-    
-    
-    <section id="contact" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/img/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <img src="./assets/img/email.png" alt="Email icon" class="icon contact-icon email-icon" />
           <p><a href="mailto:riteshojha2002@gmail.com">RITESHOJHA2002@GMAIL.COM</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/img/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/ojharitesh">LinkedIn</a></p>
+          <img src="./assets/img/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/ojharitesh" target="_blank">LinkedIn</a></p>
         </div>
-      </div>
     </section>
 
-
-    <!-- Include modal -->
-
-    
-    <section id="music">
-      <h1 class="title">My Favourite Songs</h1>
-        <div class="music-container" style="width:100%;">
-          <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbVhgADFy3im" frameborder="0" allowtransparency="true" allow="encrypted-media" loading="lazy" style="width:100%;"  id="spotify-playlist"></iframe>      
-        </div>
-
-    </section>
-
+    <!-- Footer -->
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -214,20 +211,18 @@
             <li><a href="blog.html">Blogs</a></li>
             <li><a href="#experience">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Ritesh Ojha. All Rights Reserved.</p>
-    </footer> 
+      <p>Copyright &#169; <span id="current-year">2024</span> Ritesh Ojha. All Rights Reserved.</p>
+    </footer>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Scripts -->
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="/assets/js/script.js"></script>
-    <!-- <script defer src="/assets/js/lightbox.js"></script> -->
-    <!-- <script src="assets/js/animation.js"></script> -->
-
-
   </body>
 </html>
